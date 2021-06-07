@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.topnav {
+  display: flex;
+  /* border: solid rgb(56, 56, 56); */
+  /* border-radius: 8px; */
+  align-items: center;
+  justify-items: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+/* Logo adjustments */
+.logo1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  padding-left: 10px;
+  padding-top: 6px;
+}
+
+.logo img {
+  margin: 0%;
+  width: 60px;
+  border: solid white;
+  border-radius: 30px;
+}
+
+/* navigation bar styling */
+.nav-list {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  list-style: none;
+  margin: 20px;
+  padding: 2px;
+  /* border: 2px solid white; */
+  border-radius: 8px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: solid rgb(255, 255, 255);
+}
+
+
+
+
+/* contact right side */
+.rightNav {
+  width: 40%;
+  text-align: right;
+  list-style: none;
+  margin: 20px;
+}
+
+.rightNav button {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.rightNav a {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin: 50px;
+}
+.rightNav a .btn:hover{
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+/* section part  */
+.right{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+}
+.secpara{
+  padding: 0 60px;
+}
+.left{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  flex-direction: row-reverse;
+  font-family: 'Playfair Display', serif;
+}
+.Btn{
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.Btn:hover{
+  background: cornsilk;
+}
+.image img{
+  border-radius: 50%;
+}
+/* python code css */
+.background {
+  background: rgba(0, 0, 0, 0.7) url("../img/bg.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+
+.firstsection {
+  height: 80vh;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  max-width: 50%;
+  margin: auto;
+  height: 75%;
+}
+
+.firsthalf {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.secondhalf {
+  width: 30%;
+}
+
+.secondhalf img {
+  width: 100px;
+}
+
+.heading-python {
+  padding: 2px 10%;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10%;
+}
+
+.card1 {
+  width: 30%;
+  display: flex;
+  border: solid black;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  margin: 2px 10px;
+  flex-direction: column;
+
+}
+
+.card2 {
+  width: 30%;
+  display: flex;
+  border: solid black;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  margin: 2px 10px;
+  flex-direction: column;
+
+}
+.card3 {
+  width: 30%;
+  display: flex;
+  border: solid black;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  margin: 2px 10px;
+  flex-direction: column;
+
+  
+}
+
+h6{
+  color: green;
+}
+.modal-para {
+  margin: 6px;
+  margin-bottom: 30px;
+}
+.modal-body {
+  background-color: white;
+  color: #000;
+}
+
+.modal-footer {
+  border: solid black;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 5px;
+}
+
+.modal-footer a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.myBtn{
+  padding-bottom: 0%;
+  border: 2px solid black;
+  margin: 3px;
+  border-radius: 16px;
+  background-color: green;
+  color: black;
+}
+.myBtn:hover{
+  background-color: #fff;
+}
+
+
+/* Modal styling */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000000;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  background-color: #000;
+  /* text-decoration: none; */
+  /* cursor: pointer; */
+}
+
+
+.f-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10%;
+  /* background-co: rgba(0, 0, 0); */
+}
+
+.f-container .card1{
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  margin: 0 80px;
+}
+.f-container .card1 h2{
+  text-decoration: underline;
+}
+
+.f-container .card2{
+  /* background-color: blue; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 80px;
+}
+.foot li a{
+  margin: 12px;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
