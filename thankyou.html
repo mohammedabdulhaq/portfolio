@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>My Protfolio | Thankyou</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>My Protfolio | Home-Page</title>
 
 
 
@@ -16,27 +17,32 @@
 <body>
 
 
-
     <section class="background firstsection">
-        <nav class="topnav background">
-            <a class="logo1" href="index.html">
-                <div class="logo"><img src="img/logo.png" alt="sohail"></div>
-            </a>
-            <ul class="nav-list">
-                <li><a class="navbar" href="index.html">Home</a></li>
-                <li><a class="navbar" href="python.html">Projects</a></li>
-                <li><a class="navbar" href="https://github.com/mohammedabdulhaq" target="_blank">Github</a></li>
+
+
+        <nav class="navbar background h-nav-resp">
+
+            <ul class="nav-list v-class-resp">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="sohail"></a></div>
+                <li><a class="navitems" href="index.html">Home</a></li>
+                <li><a class="navitems" href="python.html">Projects</a></li>
+                <li><a class="navitems" href="https://github.com/mohammedabdulhaq" target="_blank">Github</a></li>
+
             </ul>
-            <div class="rightNav">
+            <div class="rightNav v-class-resp">
                 <a href="contact.html"><button class="btn btn-sm">Contact</button></a>
             </div>
+
         </nav>
+        <!-- hamburger  -->
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
 
-
-
-
-
-        <div class="box-main">
+        <!-- main box section  -->
+        <div class="box-main ">
             <div class="firsthalf">
                 <h1>Mohammed Abdul Haq</h1>
                 <p>Electronics and communication Engineering student |<br> Web-Developer | Python Programmer</p>
@@ -45,8 +51,8 @@
                 <img src="img/img.png" alt="">
             </div>
         </div>
-    </section>
 
+    </section>
 
 
 
@@ -111,17 +117,15 @@
 
 
         <div class="card1">
-            <h2>Contact</h2>
-            <br>
-            <form action="thankyou.html">
-                <label for="name">First name:</label><br>
-                <input type="text" id="name" placeholder="Enter Your Name"><br>
-                <label for="Phone">Phone No.</label><br>
-                <input type="tel" id="Phone" placeholder="Enter Your Phone No." pattern="[0-9]{10}"><br>
-                <label for="email">Email ID</label><br>
-                <input type="email" id="email" placeholder="xyz@gmai.com"><br><br>
-                <input type="submit" value="Submit">
-            </form>
+
+
+            <section class="map">
+                <h2>Map</h2><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.8980216027615!2d78.42149272913575!3d17.442075446614652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb912415869e8f%3A0x6c479f5b7e835b30!2sIndian%20online%20quran%20academy!5e0!3m2!1sen!2sin!4v1623307550457!5m2!1sen!2sin"
+                    width="140vw" height="140vh" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+
         </div>
 
 
@@ -129,19 +133,39 @@
             <h2 style="text-decoration: underline;">Social Media Links</h2>
             <br>
             <ul class="foot">
-                <li><a href="https://www.facebook.com/profile.php?id=100005732239026" target="_blank">Facebook</a></li>
-                <li><a href="https://www.linkedin.com/in/mohammed-abdul-haq-717678142/" target="_blank">Linkin</a></li>
-                <li><a href="https://github.com/mohammedabdulhaq" target="_blank">Github</a></li>
-                <li>abdulhaq7123@gmail.com</li>
+                <li class="fb"><a href="https://www.facebook.com/profile.php?id=100005732239026"
+                        target="_blank">Facebook</a></li>
+                <li class="Lin"><a href="https://www.linkedin.com/in/mohammed-abdul-haq-717678142/"
+                        target="_blank">Linkin</a></li>
+                <li class="Gh"><a href="https://github.com/mohammedabdulhaq" target="_blank">Github</a></li>
+                <!-- <li>abdulhaq7123@gmail.com</li> -->
             </ul>
         </div>
-
     </div>
 
+    <footer>
+        <h4
+            style="text-align: center; background-color: black; color: rgb(255, 240, 240); border-top: 1px solid white;">
+            &copy; 2021 | Mohammed ABDUL HAQ </h4>
+    </footer>
+
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.topnav')
+        navlist = document.querySelector('.nav-list')
+        rightNav = document.querySelector('.rightNav')
+        first = document.querySelector('.firstsection')
 
 
+        burger.addEventListener('click', () => {
+            rightNav.classList.toggle('v-class-resp')
+            navlist.classList.toggle('v-class-resp')
+            navbar.classList.toggle('h-class-resp')
+            first.classList.toggle('firstsection-resp')
+        })
 
-<script src="js/script.js"></script>
+    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

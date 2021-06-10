@@ -1,3 +1,7 @@
+
+
+
+
 // Get the modal
 var modal = document.getElementsByClassName('modal');
 
